@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Navbar from '../common/Navbar.jsx';
+import Navbar from './Navbar.jsx';
 import ChapterManager from './ChapterManager.jsx';
 import AITestGenerator from './AITestGenerator.jsx';
 import StudentProgress from './StudentProgress.jsx';
 import { LayoutDashboard, BookOpen, Sparkles, Users } from 'lucide-react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
 
 const TABS = [
   { id: 'overview', label: 'Overview', icon: LayoutDashboard },
@@ -158,3 +158,4 @@ export default function TeacherDashboard() {
     </div>
   );
 }
+

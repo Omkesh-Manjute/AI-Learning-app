@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useCallback } from 'react';
-import { chapterService, testService, studentTestService, userService } from '../services/supabase';
+import { chapterService, testService, studentTestService, userService } from './supabase.js';
 
 const DataContext = createContext(null);
 
@@ -50,3 +50,4 @@ export function DataProvider({ children }) {
 }
 
 export const useData = () => useContext(DataContext);
+

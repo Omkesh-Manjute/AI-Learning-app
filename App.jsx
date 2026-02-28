@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { DataProvider } from './contexts/DataContext';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
-import TeacherDashboard from './components/teacher/TeacherDashboard';
-import StudentDashboard from './components/student/StudentDashboard';
-import { Loading } from './components/common/Loading';
+import { AuthProvider, useAuth } from './AuthContext.jsx';
+import { DataProvider } from './DataContext.jsx';
+import Login from './Login.jsx';
+import Register from './Register.jsx';
+import TeacherDashboard from './TeacherDashboard.jsx';
+import StudentDashboard from './StudentDashboard.jsx';
+import { Loading } from './Loading.jsx';
 
 function AppContent() {
   const { user, loading } = useAuth();
@@ -35,3 +35,4 @@ export default function App() {
     </AuthProvider>
   );
 }
+

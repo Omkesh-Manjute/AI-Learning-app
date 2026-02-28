@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
 import { BookOpen, Download, ChevronLeft, CheckCircle, Image, FileText, Filter } from 'lucide-react';
-import { EmptyState } from '../common/Loading';
+import { EmptyState } from './Loading.jsx';
 
 const SUBJECTS = ['All', 'Mathematics', 'Science', 'English', 'Social Studies', 'Hindi', 'Computer Science'];
 
@@ -175,3 +175,4 @@ export default function ChapterViewer() {
     </div>
   );
 }
+

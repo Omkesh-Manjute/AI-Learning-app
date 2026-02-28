@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
 import { ClipboardList, Clock, Play, ChevronRight, ChevronLeft, CheckCircle, XCircle, AlertCircle, RotateCcw } from 'lucide-react';
-import { EmptyState } from '../common/Loading';
+import { EmptyState } from './Loading.jsx';
 
 function Timer({ seconds, onExpire }) {
   const [remaining, setRemaining] = useState(seconds);
@@ -338,3 +338,4 @@ export default function TestTaker() {
     </div>
   );
 }
+

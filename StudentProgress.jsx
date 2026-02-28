@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useData } from '../../contexts/DataContext';
+import { useData } from './DataContext.jsx';
 import { Users, TrendingUp, Award, FileText } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -170,3 +170,4 @@ export default function StudentProgress() {
     </div>
   );
 }
+

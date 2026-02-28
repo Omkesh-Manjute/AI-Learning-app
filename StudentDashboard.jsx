@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Navbar from '../common/Navbar.jsx';
+import Navbar from './Navbar.jsx';
 import ChapterViewer from './ChapterViewer.jsx';
 import TestTaker from './TestTaker.jsx';
 import ProgressTracker from './ProgressTracker.jsx';
 import { BookOpen, ClipboardList, TrendingUp, User } from 'lucide-react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
 
 const TABS = [
   { id: 'chapters', label: 'My Chapters', icon: BookOpen },
@@ -137,3 +137,4 @@ export default function StudentDashboard() {
     </div>
   );
 }
+

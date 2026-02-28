@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from './AuthContext.jsx';
 import { BookOpen, User, Mail, Lock, GraduationCap } from 'lucide-react';
 
 export default function Register({ onSwitchToLogin }) {
@@ -119,3 +119,4 @@ export default function Register({ onSwitchToLogin }) {
     </div>
   );
 }
+

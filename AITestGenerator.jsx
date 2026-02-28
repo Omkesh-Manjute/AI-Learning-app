@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
-import { generateTestWithAI, generateFallbackTest, getAutoProvider, PROVIDERS } from '../../services/aiService';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
+import { generateTestWithAI, generateFallbackTest, getAutoProvider, PROVIDERS } from './aiService.js';
 import { Sparkles, BookOpen, CheckCircle, Edit2, Save, Trash2, Plus, Key, AlertCircle, Eye, ExternalLink, ChevronDown } from 'lucide-react';
 
 const TYPE_LABELS  = { mcq: 'MCQ', true_false: 'True/False', short_answer: 'Short Answer' };
@@ -418,3 +418,4 @@ export default function AITestGenerator() {
     </div>
   );
 }
+

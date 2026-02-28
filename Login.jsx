@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from './AuthContext.jsx';
 import { BookOpen, Eye, EyeOff, Mail, Lock } from 'lucide-react';
 
 export default function Login({ onSwitchToRegister }) {
@@ -103,3 +103,4 @@ export default function Login({ onSwitchToRegister }) {
     </div>
   );
 }
+

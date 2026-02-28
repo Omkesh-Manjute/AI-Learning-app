@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useData } from '../../contexts/DataContext';
-import { useAuth } from '../../contexts/AuthContext';
+import { useData } from './DataContext.jsx';
+import { useAuth } from './AuthContext.jsx';
 import { Plus, Edit2, Trash2, BookOpen, ChevronDown, ChevronUp, X, Save } from 'lucide-react';
-import { EmptyState } from '../common/Loading';
+import { EmptyState } from './Loading.jsx';
 
 const SUBJECTS = ['Mathematics', 'Science', 'English', 'Social Studies', 'Hindi', 'Computer Science', 'Sanskrit', 'Physical Education'];
 const CLASSES = Array.from({ length: 10 }, (_, i) => String(i + 1));
@@ -244,3 +244,4 @@ export default function ChapterManager() {
     </div>
   );
 }
+
