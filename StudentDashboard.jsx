@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Navbar from '../common/Navbar';
-import ChapterViewer from './ChapterViewer';
-import TestTaker from './TestTaker';
-import ProgressTracker from './ProgressTracker';
+import Navbar from '../common/Navbar.jsx';
+import ChapterViewer from './ChapterViewer.jsx';
+import TestTaker from './TestTaker.jsx';
+import ProgressTracker from './ProgressTracker.jsx';
 import { BookOpen, ClipboardList, TrendingUp, User } from 'lucide-react';
 import { useData } from '../../contexts/DataContext';
 import { useAuth } from '../../contexts/AuthContext';

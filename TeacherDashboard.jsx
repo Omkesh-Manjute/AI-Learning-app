@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Navbar from '../common/Navbar';
-import ChapterManager from './ChapterManager';
-import AITestGenerator from './AITestGenerator';
-import StudentProgress from './StudentProgress';
+import Navbar from '../common/Navbar.jsx';
+import ChapterManager from './ChapterManager.jsx';
+import AITestGenerator from './AITestGenerator.jsx';
+import StudentProgress from './StudentProgress.jsx';
 import { LayoutDashboard, BookOpen, Sparkles, Users } from 'lucide-react';
 import { useData } from '../../contexts/DataContext';
 import { useAuth } from '../../contexts/AuthContext';
